@@ -79,7 +79,7 @@ class ProductItemDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="products-details-loader-container" testid="loader">
+    <div className="products-details-loader-container" /* testid="loader" */>
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -163,7 +163,7 @@ class ProductItemDetails extends Component {
                     type="button"
                     className="quantity-controller-button"
                     onClick={this.onDecrementQuantity}
-                    testid="minus"
+                    // testid="minus"
                   >
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
@@ -172,7 +172,7 @@ class ProductItemDetails extends Component {
                     type="button"
                     className="quantity-controller-button"
                     onClick={this.onIncrementQuantity}
-                    testid="plus"
+                    // testid="plus"
                   >
                     <BsPlusSquare className="quantity-controller-icon" />
                   </button>
